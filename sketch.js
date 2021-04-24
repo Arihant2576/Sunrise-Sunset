@@ -30,65 +30,10 @@ function draw(){
         textSize(30);
         text("Time : " + hour + "AM", 100, 100);
     }
-    else if(hour >= 12 && hour < 13){
+    else if(hour >= 12 && hour < 23){
         fill("black");
         textSize(30);
-        text("Time : 12PM", 100, 100);
-    }
-    else if(hour >= 13 && hour < 14){
-        fill("black");
-        textSize(30);
-        text("Time : 1PM", 100, 100);
-    }
-    else if(hour >= 14 && hour < 15){
-        fill("black");
-        textSize(30);
-        text("Time : 2PM", 100, 100);
-    }
-    else if(hour >= 15 && hour < 16){
-        fill("black");
-        textSize(30);
-        text("Time : 3PM", 100, 100);
-    }
-    else if(hour >= 16 && hour < 17){
-        fill("black");
-        textSize(30);
-        text("Time : 4PM", 100, 100);
-    }
-    else if(hour >= 17 && hour < 18){
-        fill("black");
-        textSize(30);
-        text("Time : 5PM", 100, 100);
-    }
-    else if(hour >= 18 && hour < 19){
-        fill("black");
-        textSize(30);
-        text("Time : 6PM", 100, 100);
-    }
-    else if(hour >= 19 && hour < 20){
-        fill("black");
-        textSize(30);
-        text("Time : 7PM", 100, 100);
-    }
-    else if(hour >= 20 && hour < 21){
-        fill("black");
-        textSize(30);
-        text("Time : 8PM", 100, 100);
-    }
-    else if(hour >= 21 && hour < 22){
-        fill("black");
-        textSize(30);
-        text("Time : 9PM", 100, 100);
-    }
-    else if(hour >= 22 && hour < 23){
-        fill("black");
-        textSize(30);
-        text("Time : 10PM", 100, 100);
-    }
-    else if(hour >= 23){
-        fill("black");
-        textSize(30);
-        text("Time : 11PM", 100, 100);
+        text("Time : " + (hour - 12) + "PM", 100, 100);
     }
     else {
         fill("black");
